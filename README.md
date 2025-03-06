@@ -7,7 +7,8 @@ Specific card can be found here:
 http://www.waveshare.com/wm8960-audio-hat.htm
 
 # WARNING: 
-This was only minimally tested on a Orange Pi 2W so I take no responibility for your hardware or my bad code.
+# This does not have a working uninstall yet!
+This was also only minimally tested on a Orange Pi 2W so I take no responibility for your hardware or my bad code.
 ### TLDR:
 ```bash
 git clone https://github.com/waveshare/WM8960-Audio-HAT
