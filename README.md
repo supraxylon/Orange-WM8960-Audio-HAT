@@ -1,19 +1,30 @@
-# WM8960 Audio HAT
+# Orange pi compatibe WM8960 Audio HAT driver install
 
-The drivers of [WM8960 Audio HAT] for Raspberry Pi.
+This is a fork of the official drivers for the [WM8960 Audio HAT] for Raspberry Pi. Currently they do not officially support orange pi so I made a fork that 
 
-http://www.waveshare.net/shop/WM8960-Audio-HAT.htm
+Specific card can be found here: 
 
 http://www.waveshare.com/wm8960-audio-hat.htm
 
-### Install wm8960-soundcard
-Get the wm8960 soundcard source code. and install all linux kernel drivers
+# WARNING: 
+This was only minimally tested on a Orange Pi 2W so I take no responibility for your hardware or my bad code.
 
+### Install wm8960-soundcard
+1) Get the wm8960 soundcard source code. and install all linux kernel drivers
 ```bash
 git clone https://github.com/waveshare/WM8960-Audio-HAT
 cd WM8960-Audio-HAT
-sudo ./install.sh 
-sudo reboot
+```
+2A) IF you have an Orange Pi 2W or simply want to live on the edge use my version of the installer:
+```sudo ./orangePiInstall.sh
+```
+
+2B) If you are installing this on a raspberry PI use the "raspberry_install.sh" version: (though why are you here if thats the case?)
+```sudo ./raspberry_install.sh
+```
+
+3) Reboot
+```sudo reboot now
 ```
 
 While the upstream wm8960 codec is not currently supported by current Pi kernel builds, upstream wm8960 has some bugs, we had fixed it. we must it build manually.
